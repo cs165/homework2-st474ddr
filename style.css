@@ -1,1 +1,47 @@
 /* TODO(you): Write the CSS to finish the assignment! */
+@media only screen and (max-width: 700px){
+  article{
+    width: 95%;
+  }
+  header div{
+    display: none;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.choice-grid{
+	display:flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+section div{
+	flex:none;
+	border-width:1px;
+	border-color:#dcdcdc;
+	background-color:#f4f4f4;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	padding:20px 10px;
+	width:32.5%;
+	height:auto;
+}
+section div img{
+	width:100%;
+}
+button{
+	background-color:#cecece;
+	height:50px;
+	width:100%;
+	margin-bottom: 20px;
+}
+button:hover{
+	color:#e0e0e0;
+}
+@media only screen and (max-width: 500px){
+  .choice-grid > div{
+    width: 49%;
+  }
+}
